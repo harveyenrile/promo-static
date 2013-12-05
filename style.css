@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+hr{
+
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+.block{
+  padding: 10px;
+}
+
+input{
+  outline: none;
+}
+
+/* BREADCRUMBS */
+.breadcrumb { 
+  list-style: none; 
+  overflow: hidden; 
+  
+}
+.breadcrumb li { 
+  float: left; 
+}
+.breadcrumb li:first-child a{
+  padding-left: 20px;
+}
+.breadcrumb li a {
+  font-size: 12px;
+  
+  color: #999;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none; 
+  padding: 10px 0 10px 45px;
+  background: #e8e8e8;                   /* fallback color */
+  
+  position: relative; 
+  display: block;
+  float: left;
+}
+.breadcrumb li.active a{
+  color: #333;
+  cursor: default;
+  font-weight: bold;
+}
+.breadcrumb li a:after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #e8e8e8;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.breadcrumb li a:before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+}
+
+
+body{
+  font-family: "Helvetica", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  color: #565656;
+}
+textarea, input[type=text]{
+  font-family: "Helvetica", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+textarea{
+  min-height: 80px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+textarea:focus{
+  border: 1px solid #54BD8E;
+  outline: none;
+
+}
+a{
+  color: #348ABB;
+}
+.form fieldset{
+  padding: 10px;
+  display: block;
+}
+.form label{
+  display: block;
+  font-weight: bold;
+}
+.form textarea{
+  min-width: 300px;
+}
+.help-inline{
+  font-size: 12px;
+  color: #999;
+}
+
+.btn, a.btn{
+  display: inline-block;
+  padding: 8px 10px;
+  background: #e1e1e1;
+  border: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #676767;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover{
+  background: #d5d5d5;
+}
+.btn.action{
+  background: #54BD8E;
+  color: #fff;
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROMO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tables.css">
+  </head>
+  <body>
+    <div class="block"> <!-- .block to add some padding -->
+      <a href="#" class="btn action">List item</a>
+    </div>
+    <hr size="1"> <!-- ######### seperator lang ni cya bai, ayaw lang ni labota -->
+    <form class="form" accept-charset="UTF-8" action="http://localhost:3002/check_items" method="post"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="seaXCJlH4IDdd9Eer9qL4S/OFn3pSe1mvQFHHHtnwCE=">
+  
+    <fieldset>
+      <label for="Item_Codes">Item codes</label>
+      <textarea id="item_codes" name="item_codes"></textarea>
+      <div class="help-inline">Separate item codes by comma</div>
+    </fieldset>
+    <fieldset>
+      <input name="commit" type="submit" class="btn action" value="Check Item Codes">
+    </fieldset>
+  </form>
+  <hr size="1"> <!-- ######### seperator lang ni cya bai, ayaw lang ni labota -->
+
+  <table class="table table-small">
+    <thead>
+      <tr>
+        <th>Table data head</th>
+        <th>Table data head</th>
+        <th>Table data head</th>
+        <th>Table data head</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sample table data</td>
+        <td>Sample table data</td>
+        <td>Sample table data</td>
+        <td>Sample table data</td>
+      </tr>
+      <tr>
+        <td>Sample table data</td>
+        <td>Sample table data</td>
+        <td>Sample table data</td>
+        <td>Sample table data</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr size="1"> <!-- ######### seperator lang ni cya bai, ayaw lang ni labota -->
+
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li class="active"><a href="#">Vehicles</a></li>
+    <li><a href="#">Vans</a></li>
+    <li><a href="#">Camper Vans</a></li>
+    <li><a href="#">1989 VW Westfalia Vanagon</a></li>
+  </ul>
+
+  </body>
+
+</html>
