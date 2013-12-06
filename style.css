@@ -28,6 +28,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   line-height: 1;
 }
@@ -136,6 +141,16 @@ textarea:focus{
 }
 a{
   color: #348ABB;
+}
+.header{
+  background-color: #e1e1e1;
+  padding: 10px;
+}
+a.logo{
+  float: left;
+}
+a.logo img{
+  height: 40px;
 }
 .form fieldset{
   padding: 10px;
